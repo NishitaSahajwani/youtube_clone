@@ -18,12 +18,12 @@ function Sidebar({setselectCategory,selectCategory}) {
         className="category-btn"
         onClick={() => setselectCategory(category.name)}
         style={{
-          background: category.name === selectCategory && "#FC1503",
+          background: category.name === selectCategory && "#D71313",
           color: "white",
         }}
         key={category.name}
       >
-        <span style={{ color: category.name === selectCategory ? "white" : "red", marginRight: "15px" }}>
+        <span style={{ color: category.name === selectCategory ? "white" : "#D71313", marginRight: "15px" }}>
           {category.icon}
         </span>
         <span style={{ opacity: category.name === selectCategory ? "1" : "0.8" }}>

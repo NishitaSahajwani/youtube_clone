@@ -6,10 +6,10 @@ import {demoChannelTitle,demoChannelUrl,demoProfilePicture,demoThumbnailUrl , de
 
 export default function VideoCard({video :{id:{videoId},snippet}}) {
   return (
-    <Card sx={{ width: { xs: '100%', sm: '358px', md: "320px" }, boxShadow: "none", borderRadius: 0, }}>
+    <Card sx={{ width: { xs: '300px', sm: '358px', md: "320px" }, boxShadow: "none", borderRadius: 0, }}>
     <Link to={videoId ? `/video/${videoId}` : `/video/cV2gBU6hKfY` }>
       <CardMedia image={snippet?.thumbnails?.high?.url || demoThumbnailUrl} alt={snippet?.title} 
-        sx={{ width: {xs:'100%', sm: '358px', md: "320px" }, height: 180,borderTopLeftRadius: 20 }} 
+        sx={{ width: {xs:'300px', sm: '358px', md: "320px" }, height: 180,borderTopLeftRadius: 20 }} 
       />
     </Link>
 

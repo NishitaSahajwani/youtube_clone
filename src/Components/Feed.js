@@ -30,7 +30,7 @@ export default function Feed() {
     
       <Box p={1} sx={{overflowY: 'auto', height: '90vh', flex: 2}}>
         <Typography variant='h4' fontWeight="bold" mb={2} sx={{color: 'white'}}>
-          {selectCategory} <span style={{color:"#F31503"}}>vidoes</span>
+          {selectCategory} <span style={{color:"#D71313"}}>vidoes</span>
         </Typography>
         <Videos videos={videos}/>
       </Box>
